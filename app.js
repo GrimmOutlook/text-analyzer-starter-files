@@ -38,21 +38,33 @@
 
   console.log(avgWordLength);
 
+// 7. Unique Word Count:
+  //  - Store first string in userArray in new array (var uniqueWordArray)
+  var uniqueWordArray = userArray[0];
+  // console.log(uniqueWordArray);
+
+
+  //  - Iterate over each string in userArray, comparing it to any of the strings in uniqueWordArray
+  userArray.some(function(word, array){
+    //  - If a string in userArray doesn't match any string in uniqueWordArray, push that string into uniqueWordArray.  WTF is the code for this???????????!!!!!!!!!!
+    if (word != array[every index]){
+      uniqueWordArray += ", " + word;
+    }
 
   });
 
+console.log(uniqueWordArray);
 
 
-
-
-
-// 7. Unique Word Count:
-  //  - Store first string in userArray in new array (var uniqueWordArray)
-  //  - Iterate over each string in userArray, comparing it to any of the strings in uniqueWordArray
-  //  - If a string in userArray doesn't match a string in uniqueWordArray, push that string into uniqueWordArray.
   //  - After iterating over each string in userArray, set var uniqueWords =    uniqueWordArray.length
+  var uniqueWords = uniqueWordArray.length
+  console.log(uniqueWords);
+
+});
 
 // 8. Remove .hidden class from dl tag
+
+
 
 // 9. Add corresponding answers to dd tags
 
