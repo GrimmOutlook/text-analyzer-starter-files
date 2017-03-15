@@ -47,6 +47,9 @@
   //  - Iterate over each string in userArray, comparing it to any of the strings in uniqueWordArray
   userArray.some(function(word, array){
     //  - If a string in userArray doesn't match any string in uniqueWordArray, push that string into uniqueWordArray.  WTF is the code for this???????????!!!!!!!!!!
+
+    // use the array includes method, if doesn't work, post to Slack!
+
     if (word != array[every index]){
       uniqueWordArray += ", " + word;
     }
@@ -60,13 +63,19 @@ console.log(uniqueWordArray);
   var uniqueWords = uniqueWordArray.length
   console.log(uniqueWords);
 
-});
-
 // 8. Remove .hidden class from dl tag
+
+$(this).parentsUntil($('main')).siblings($('dl')).removeClass('hidden').html("<dd>" + totalWordCount "</dd>" + "<dd>" + avgWordLength "</dd>" + "<dd>" + uniqueWords + "</dd>");
 
 
 
 // 9. Add corresponding answers to dd tags
+
+
+
+});
+
+
 
 
 
